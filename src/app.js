@@ -6,6 +6,8 @@ const errorHandler = require('./error-handlers/500');
 /* `const PORT = process.env.PORT || 3002;` is setting the port number for the server to listen on. It
 first checks if there is a port number specified in the environment variable `process.env.PORT`. If
 there is, it uses that port number. If not, it defaults to port number 3002. */
+
+require('dotenv').config();
 const PORT = process.env.PORT || 3002;
 
 const app = express();
